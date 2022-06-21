@@ -29,6 +29,10 @@ module.exports = {
       },
       seeds: {
         directory: './data/seeds',
+      },
+       ssl: {      /* <----- Add SSL option */
+        require: false,
+        rejectUnauthorized: false 
       }
   },
 
