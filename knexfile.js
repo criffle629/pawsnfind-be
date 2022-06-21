@@ -7,7 +7,7 @@
  require('dotenv').config();
 
 
- const DATABASE_URL = process.env.DATABASE_URL;
+ const DATABASE_URL = process.env.DATABASE_IP;
  const DB_PASSWORD = process.env.DB_PASSWORD;
  const DB_USER = process.env.DB_USER;
  const DB_NAME = process.env.DB_NAME;
