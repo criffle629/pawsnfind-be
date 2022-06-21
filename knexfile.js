@@ -7,7 +7,7 @@
  require('dotenv').config();
 
 
- const dbConnection = process.env.DATABASE_URL;
+ const DATABASE_URL = process.env.DATABASE_URL;
  const DB_PASSWORD = process.env.DB_PASSWORD;
  const DB_USER = process.env.DB_USER;
  const DB_NAME = process.env.DB_NAME;
@@ -51,9 +51,11 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: DB_NAME,
+      user: DB_USER,
+      password: DB_PASSWORD,
+      port: DB_PORT,
+      host: DATABASE_URL
     },
     pool: {
       min: 2,
