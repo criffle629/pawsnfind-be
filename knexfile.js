@@ -22,7 +22,7 @@ module.exports = {
       user: DB_USER,
       password: DB_PASSWORD,
       port: DB_PORT,
-      host: dbConnection
+      host: DATABASE_URL
       },
       migrations: {
         directory: './data/migrations',
